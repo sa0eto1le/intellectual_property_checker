@@ -41,4 +41,4 @@ Pour une évaluation personnalisée, il est recommandé de consulter :
 - un avocat spécialisé en propriété intellectuelle / an intellectual property lawyer
   
 
-🚧 **En développement / Under construction**
+⚙️ **Projet en cours / Work in progress**
