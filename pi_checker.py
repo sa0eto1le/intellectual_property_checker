@@ -4,9 +4,9 @@ import random
 import sys
 import textwrap
 
-# ==========================================
-# PARTIE 1 : LA BANNIÈRE (Visuals & Audio)
-# ==========================================
+# =======================
+# PARTIE 1 : LA BANNIÈRE 
+# =======================
 
 # Palette couleurs disponibles
 PALETTE_COULEURS = [
@@ -22,7 +22,7 @@ REINITIALISATION = "\033[0m"
 
 # Contenu texte
 PHRASE = "per aspera, ad astra ✶"
-NOM_SCRIPT = "INTELLECTUAL PROPERTY CHECKER" # J'ai adapté le nom pour le contexte
+NOM_SCRIPT = "INTELLECTUAL PROPERTY CHECKER" 
 
 # Logo
 logo_gauche = r"""
@@ -67,9 +67,8 @@ logo_droite = r"""
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈
 """.splitlines()
 
-# Animation functions
+# Animation 
 def effacer_ecran():
-    """Ecran noir console (compatible Windows et Unix)"""
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def afficher_banniere(progression=None):
@@ -118,18 +117,17 @@ def lancer_intro_banniere():
     time.sleep(1)
     afficher_en_tete(NOM_SCRIPT)
 
-# ==========================================
-# PARTIE 2 : LE FORMULAIRE (Logique)
-# ==========================================
+# ===========================
+# PARTIE 2 : LE FORMULAIRE 
+# ===========================
 
 class FormulaireDroitsSalaries:
     def __init__(self):
         self.reponses = {}
-        self.resultat = [] # Correction: initialisation de la liste vide
+        self.resultat = [] 
         self.width = 80
 
     def afficher_titre(self):
-        # Le titre est déjà affiché par la bannière, on affiche juste l'intro
         print(textwrap.fill("Ce formulaire interactif vous aide à comprendre qui est propriétaire de vos créations (logiciels, inventions, designs, textes...) selon votre situation. Les réponses sont basées sur le droit français et les règlements européens compatibles.", width=self.width))
         print("-" * self.width)
         print("IMPORTANT : Ce résultat est informatif et ne remplace pas l'avis d'un avocat.")
@@ -185,7 +183,6 @@ class FormulaireDroitsSalaries:
         self.afficher_titre()
 
         # NIVEAU 1 : STATUT
-        # Correction: Ajout des options manquantes basées sur la logique du code original
         opts_statut = ["Salarié (Secteur Privé)", "Agent Public / Fonctionnaire", "Stagiaire", "Journaliste", "Freelance / Indépendant"]
         statut = self.poser_question("statut", "Quel est votre contrat ou statut actuel?", opts_statut)
 
@@ -200,7 +197,6 @@ class FormulaireDroitsSalaries:
             return
 
         # NIVEAU 2 : TYPE DE CRÉATION
-        # Correction: Ajout des options manquantes
         opts_crea = ["Logiciel / Code informatique", "Invention technique (Brevetable)", "Design / Modèle", "Texte / Photo / Création artistique"]
         type_crea = self.poser_question("type_crea", "Qu'avez-vous créé?", opts_crea)
 
@@ -241,7 +237,6 @@ class FormulaireDroitsSalaries:
             return
 
         # Cas Salarié / Agent Public
-        # Correction: Ajout des options manquantes
         opts_contexte = ["Dans l'exercice de mes fonctions (au travail)", "Sur mon temps libre avec mes moyens personnels"]
         contexte = self.poser_question("soft_contexte", "Avez-vous créé ce logiciel...", opts_contexte)
 
@@ -361,13 +356,13 @@ class FormulaireDroitsSalaries:
                      "Art. L.111-1 CPI"
                  )
 
-# ==========================================
+# ==============================
 # EXÉCUTION GLOBALE DU SCRIPT
-# ==========================================
+# ==============================
 
 if __name__ == "__main__":
     try:
-        # ÉTAPE 1 : Lancement de ta bannière perso
+        # ÉTAPE 1 : Lancement bannière perso
         lancer_intro_banniere()
 
         # ÉTAPE 2 : Transition et lancement du formulaire
@@ -375,4 +370,8 @@ if __name__ == "__main__":
         app.demarrer()
 
     except KeyboardInterrupt:
+        print(f"\n\n{COULEUR_CHOISIE}Programme interrompu. Au revoir !{REINITIALISATION}")
+
+    except KeyboardInterrupt:
+
         print(f"\n\n{COULEUR_CHOISIE}Programme interrompu. Au revoir !{REINITIALISATION}")
