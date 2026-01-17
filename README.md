@@ -40,5 +40,3 @@ Pour une évaluation personnalisée, il est recommandé de consulter :
 - un service juridique interne / an internal legal department  
 - un avocat spécialisé en propriété intellectuelle / an intellectual property lawyer
   
-
-⚙️ **Projet en cours / Work in progress**
