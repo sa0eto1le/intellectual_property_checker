@@ -257,7 +257,7 @@ Pour une évaluation personnalisée, il est recommandé de consulter :
  
 ---
  
-##  Auteur / Author
+##  Auteur 
  
 **sa0**  
 Droit du numérique · Propriété intellectuelle
