@@ -624,15 +624,17 @@ try:
     elif creation == 4:
         afficher_resultat(
             "🟡", "BASE DE DONNÉES  —  DOUBLE RÉGIME POSSIBLE",
-            "Les bases de données peuvent bénéficier d'une double protection : "
-            "le droit d'auteur si la structure est originale (choix et disposition des données), "
-            "et le droit sui generis du producteur si un investissement substantiel "
-            "a été consacré à la constitution, vérification ou présentation du contenu "
-            "(art. L341-1 CPI). "
-            "Pour les bases créées dans un cadre professionnel, le droit sui generis "
-            "appartient en principe à l'employeur ou au commanditaire qui a financé "
-            "l'investissement. La structure originale peut, elle, rester protégée "
-            "par le droit d'auteur selon les règles applicables à ton statut."
+            "Les bases de données peuvent relever d'une double protection : le droit "
+            "d'auteur si le choix ou la disposition des matières est original, et le "
+            "droit sui generis du producteur si la constitution, la vérification ou la "
+            "présentation du contenu atteste d'un investissement financier, matériel ou "
+            "humain substantiel (art. L341-1 CPI). Le producteur n'est pas simplement "
+            "celui qui finance : c'est la personne qui prend l'initiative et le risque "
+            "des investissements correspondants. En pratique, dans un cadre professionnel, "
+            "il s'agit souvent de l'employeur, de l'organisme ou du client porteur du "
+            "projet, mais il faut l'identifier concrètement. La structure originale de "
+            "la base peut, elle, rester protégée par le droit d'auteur selon les règles "
+            "applicables à ton statut."
         )
         afficher_article(
             "Art. L341-1 CPI  —  Droit sui generis",
@@ -649,12 +651,14 @@ try:
             if origine == 1 and temps in [1, 2] and materiel in [1, 2]:
                 afficher_resultat(
                     "🔴", "LOGICIEL SALARIÉ  —  DROITS PATRIMONIAUX À L'EMPLOYEUR",
-                    "Le logiciel a été créé dans l'exercice de tes fonctions et en réponse "
-                    "à une demande de l'employeur. L'article L113-9 CPI prévoit que les droits "
-                    "patrimoniaux sur les logiciels créés par un salarié dans l'exercice de ses "
-                    "fonctions ou d'après les instructions de son employeur sont dévolus à l'employeur. "
-                    "Tes droits moraux restent inaliénables : droit de paternité et droit au respect "
-                    "de l'intégrité de l'œuvre."
+                    "Le logiciel a été créé dans l'exercice de tes fonctions et/ou d'après "
+                    "les instructions de l'employeur. L'article L113-9 CPI prévoit alors, "
+                    "sauf dispositions statutaires ou stipulations contraires, la dévolution "
+                    "à l'employeur des droits patrimoniaux sur le logiciel et sa documentation. "
+                    "Attention : pour les logiciels, le droit moral de l'auteur existe mais il "
+                    "est légalement aménagé. Sauf stipulation plus favorable, l'auteur ne peut "
+                    "pas s'opposer à certaines modifications non préjudiciables à son honneur "
+                    "ou à sa réputation, ni exercer le droit de repentir ou de retrait."
                 )
                 afficher_article(
                     "Art. L113-9 CPI",
@@ -666,21 +670,26 @@ try:
             elif origine in [3, 4] and temps == 3 and materiel == 3:
                 afficher_resultat(
                     "🟢", "LOGICIEL  —  INITIATIVE PERSONNELLE HORS MISSION",
-                    "Le logiciel a été créé entièrement sur ton temps personnel, "
-                    "avec tes propres ressources, sans lien direct avec tes fonctions. "
-                    "Le régime de l'art. L113-9 ne s'applique que si la création relève "
-                    "de l'exercice des fonctions ou répond aux instructions de l'employeur. "
-                    "Hors de ce cadre, tu restes en principe titulaire de tes droits. "
-                    "Vérifie néanmoins toute clause de non-concurrence ou de confidentialité."
+                    "Le fait d'avoir développé le logiciel sur ton temps personnel et avec "
+                    "tes propres moyens est un élément favorable, mais ce n'est pas décisif "
+                    "à lui seul. Le point central est de savoir si le logiciel a été créé "
+                    "dans l'exercice de tes fonctions ou d'après les instructions de "
+                    "l'employeur au sens de l'article L113-9 CPI. Si la création est "
+                    "réellement étrangère à tes missions et à toute instruction reçue, "
+                    "tu restes en principe titulaire des droits patrimoniaux. Vérifie aussi "
+                    "les clauses de confidentialité, de non-concurrence et l'éventuel lien "
+                    "fonctionnel entre le logiciel et ton poste."
                 )
             else:
                 afficher_resultat(
                     "🟡", "LOGICIEL SALARIÉ  —  SITUATION MIXTE",
-                    "Certains éléments rattachent le logiciel à tes fonctions, "
-                    "d'autres suggèrent une initiative plus personnelle. "
-                    "En cas de doute, la tendance jurisprudentielle est d'appliquer le régime "
-                    "de l'art. L113-9 dès lors que le logiciel présente un lien avec les fonctions, "
-                    "même indirect. Une clarification contractuelle est fortement recommandée."
+                    "Certains éléments rattachent le logiciel à tes fonctions, d'autres "
+                    "suggèrent une initiative plus personnelle. L'enjeu central est donc de "
+                    "savoir si le logiciel a été créé dans l'exercice de tes fonctions ou "
+                    "d'après les instructions de l'employeur au sens de l'article L113-9 CPI. "
+                    "Le temps de création et le matériel utilisé sont des indices utiles, "
+                    "mais non décisifs à eux seuls. Une analyse concrète des missions confiées, "
+                    "des instructions reçues et de l'objet du logiciel est nécessaire."
                 )
 
         elif statut == 2:  # Alternant
@@ -715,52 +724,76 @@ try:
                     "🟡", "LOGICIEL STAGIAIRE  —  CLAUSE DE CESSION À ANALYSER",
                     "La convention contient une clause précise. Vérifie qu'elle couvre bien "
                     "le type de logiciel créé, les usages prévus, la durée et le territoire. "
-                    "Contrairement au salarié, il n'existe pas de régime légal automatique "
-                    "pour les stagiaires : tout repose sur la convention."
+                    "En principe, il n'existe pas pour le stagiaire de dévolution automatique "
+                    "comparable à celle du salarié. Attention toutefois : l'article L113-9-1 CPI "
+                    "prévoit un régime spécial pour certaines personnes non salariées accueillies "
+                    "par convention dans une structure, publique ou privée, réalisant de la "
+                    "recherche. Si ton stage se déroule dans un laboratoire, un établissement de "
+                    "recherche ou une structure R&D, ce point doit être vérifié."
                 )
             elif clause_stage == 2:
                 afficher_resultat(
                     "🟡", "LOGICIEL STAGIAIRE  —  CLAUSE FLOUE",
-                    "La convention contient une clause, mais sa rédaction est vague. "
-                    "En droit d'auteur, la cession doit être expresse et précise (art. L131-3 CPI). "
-                    "Une clause trop générale risque de ne pas couvrir l'exploitation souhaitée. "
-                    "Tu conserves potentiellement des droits sur ce qui n'est pas clairement cédé."
+                    "La convention contient une clause, mais sa rédaction est vague. En droit "
+                    "d'auteur, une transmission de droits doit être constatée par écrit et "
+                    "précisément délimitée. Une clause trop générale risque de ne pas couvrir "
+                    "l'exploitation souhaitée. Tu conserves potentiellement des droits sur ce "
+                    "qui n'est pas clairement cédé. Attention toutefois : si le stage se déroule "
+                    "dans une structure, publique ou privée, réalisant de la recherche, l'article "
+                    "L113-9-1 CPI peut, sous conditions, dévoluer les droits patrimoniaux sur le "
+                    "logiciel à la structure d'accueil."
                 )
             else:
                 afficher_resultat(
                     "🟢", "LOGICIEL STAGIAIRE  —  TITULAIRE EN PRINCIPE",
-                    "Aucune clause identifiable. Il n'existe pas de transfert automatique "
-                    "des droits sur les logiciels créés par un stagiaire. "
-                    "Un contrat ou une clause de cession clairement ciblée est nécessaire. "
-                    "Tu es en principe titulaire de tes droits."
+                    "Aucune clause identifiable. En principe, il n'existe pas de transfert "
+                    "automatique des droits patrimoniaux sur un logiciel créé par un stagiaire "
+                    "du seul fait du stage, et tu restes donc en principe titulaire de tes droits. "
+                    "Important : depuis l'article L113-9-1 CPI, certaines personnes non salariées "
+                    "accueillies par convention dans une structure, publique ou privée, réalisant "
+                    "de la recherche peuvent voir leurs droits patrimoniaux dévolus à la structure "
+                    "d'accueil si les conditions légales sont réunies. Si ton stage se déroule "
+                    "dans un laboratoire, un établissement de recherche ou une structure R&D, "
+                    "ce point doit être vérifié avant de conclure."
                 )
 
         elif statut == 4:  # Agent public
             afficher_resultat(
                 "🟡", "LOGICIEL AGENT PUBLIC  —  RÉGIME SPÉCIFIQUE",
-                "Pour les logiciels créés dans l'exercice des fonctions, "
-                "la personne publique dispose en principe des droits d'exploitation "
-                "(art. L131-3-1 CPI). Les agents des organismes de recherche et d'enseignement "
-                "supérieur bénéficient d'un régime plus favorable. "
-                "Le détail dépend de ton statut exact et du type d'organisme."
+                "Pour un agent public, il faut éviter de raisonner comme s'il existait une "
+                "cession générale et illimitée au profit de la personne publique. Lorsque "
+                "l'œuvre est créée dans l'exercice des fonctions ou d'après les instructions "
+                "reçues, la personne publique bénéficie d'un droit d'exploitation de plein droit "
+                "seulement dans la mesure strictement nécessaire à l'accomplissement de la mission "
+                "de service public. Pour l'exploitation commerciale, elle ne dispose en principe "
+                "que d'un droit de préférence. En outre, ce régime spécial ne s'applique pas aux "
+                "agents dont la divulgation n'est soumise à aucun contrôle hiérarchique préalable. "
+                "Pour les logiciels, il faut aussi garder à l'esprit que le droit moral de l'auteur "
+                "est légalement aménagé. Le détail dépend donc fortement du statut exact, de "
+                "l'organisme et des conditions de création."
             )
             afficher_article(
-                "Art. L131-3-1 CPI",
-                "Dans la mesure strictement nécessaire à l'accomplissement d'une mission "
-                "de service public, le droit d'exploitation d'une œuvre créée par un agent "
-                "de l'État dans l'exercice de ses fonctions ou d'après les instructions reçues "
-                "est, dès la création, cédé de plein droit à l'État."
+                "Art. L111-1, L121-7, L131-3-1 et L131-3-2 CPI",
+                "Le principe reste que l'auteur conserve son droit, sous réserve des exceptions "
+                "prévues par le code. Pour certains agents publics, la personne publique ne reçoit "
+                "de plein droit qu'un droit d'exploitation limité à ce qui est strictement "
+                "nécessaire à la mission de service public, et ne dispose en principe, pour "
+                "l'exploitation commerciale, que d'un droit de préférence."
             )
 
         elif statut == 5:  # Freelance
             if clause in [3, 4]:
                 afficher_resultat(
                     "🟢", "LOGICIEL FREELANCE  —  TITULAIRE  —  PAS DE CESSION",
-                    "Aucune clause de cession identifiable. En droit d'auteur, la cession "
-                    "doit être expresse et écrite (art. L131-3 CPI). Sans clause précise, "
+                    "Aucune clause de cession identifiable. "
+                    "En droit d'auteur, une transmission de droits doit être constatée par écrit "
+                    "(art. L131-2 CPI) et précisément délimitée quant aux droits cédés et au domaine "
+                    "d'exploitation (art. L131-3 CPI). Sans clause précise, "
                     "tu restes titulaire de tous tes droits. "
-                    "Le client ne dispose que d'une licence d'usage implicitement limitée "
-                    "à l'usage commandé — et rien de plus."
+                    "En l'absence de cession claire, le client ne peut pas se prévaloir d'un "
+                    "transfert général des droits. Il peut au mieux soutenir l'existence de droits "
+                    "d'usage limités à la finalité convenue, dont l'étendue exacte dépendra du "
+                    "contrat, des échanges et des circonstances."
                 )
             elif clause == 1 and details == 1:
                 afficher_resultat(
@@ -773,8 +806,10 @@ try:
                 afficher_resultat(
                     "🟡", "LOGICIEL FREELANCE  —  CLAUSE À PRÉCISER",
                     "Une clause existe mais est incomplète ou floue. "
-                    "Art. L131-3 CPI : la cession doit préciser chaque droit cédé, "
-                    "les usages autorisés, la durée et le territoire. "
+                    "Les contrats transmettant des droits d'auteur doivent être constatés par écrit "
+                    "(art. L131-2 CPI). En outre, chaque droit cédé doit faire l'objet d'une mention "
+                    "distincte et le domaine d'exploitation doit être délimité quant à son étendue, "
+                    "sa destination, le lieu et la durée (art. L131-3 CPI). "
                     "Tout ce qui n'est pas clairement cédé reste à toi — "
                     "c'est un levier pour clarifier ou renégocier."
                 )
@@ -821,7 +856,8 @@ try:
                 afficher_resultat(
                     "🟡", "SALARIÉ  —  CLAUSE À ANALYSER",
                     "Une clause existe mais est incomplète ou floue. "
-                    "En droit d'auteur français, la cession doit être expresse et précise. "
+                    "En droit d'auteur, une transmission de droits doit être constatée par écrit "
+                    "et précisément délimitée quant aux droits cédés et au domaine d'exploitation (art. L131-2 et L131-3 CPI)."
                     "Une clause générale 'tous droits cédés' sans détail des usages, "
                     "durée et territoire peut être insuffisante ou contestée. "
                     "Tu restes potentiellement titulaire des droits non clairement cédés."
@@ -864,8 +900,9 @@ try:
             elif clause_stage == 2:
                 afficher_resultat(
                     "🟡", "STAGIAIRE  —  CLAUSE FLOUE",
-                    "La clause est vague. En droit d'auteur, une cession doit être précise "
-                    "pour être valable. "
+                    "La clause est vague. En droit d'auteur, une transmission de droits doit être constatée par écrit "
+                    "et précisément délimitée quant aux droits cédés et au domaine d'exploitation "
+                    "pour être valable. (art. L131-2 et L131-3 CPI)."
                     "Tu conserves probablement des droits sur ce qui n'est pas clairement cédé."
                 )
             else:
@@ -879,26 +916,33 @@ try:
         elif statut == 4:  # Agent public
             if type_admin == 2:
                 afficher_resultat(
-                    "🟡", "AGENT PUBLIC  —  RECHERCHE OU ENSEIGNEMENT  —  RÉGIME FAVORABLE",
-                    "Les chercheurs et enseignants du supérieur bénéficient d'un régime "
-                    "spécifique plus favorable (art. L111-1 al. 3 CPI). "
-                    "Ils conservent en principe leurs droits d'auteur sur leurs œuvres "
-                    "scientifiques et pédagogiques, sous réserve des règles propres "
-                    "à leur établissement."
+                    "🟡", "AGENT PUBLIC  —  RECHERCHE OU ENSEIGNEMENT  —  RÉGIME À VÉRIFIER",
+                    "Le principe reste que l'auteur conserve son droit, sous réserve des exceptions "
+                    "prévues par le code. Pour les agents auteurs dont la divulgation n'est soumise "
+                    "à aucun contrôle hiérarchique préalable, les règles spéciales applicables à "
+                    "certains agents publics ne s'appliquent pas. Cette situation peut se rencontrer "
+                    "dans certaines activités d'enseignement et de recherche, mais elle doit être "
+                    "vérifiée concrètement au regard du statut, des fonctions exercées et des règles "
+                    "de l'établissement."
                 )
                 afficher_article(
-                    "Art. L111-1 al. 3 CPI",
-                    "L'existence ou la conclusion d'un contrat de louage d'ouvrage ou de service "
-                    "par l'auteur d'une œuvre de l'esprit n'emporte pas dérogation à la jouissance "
-                    "du droit reconnu par l'alinéa 1er."
+                    "Art. L111-1, L121-7-1 et L131-3-1 à L131-3-3 CPI",
+                    "Les règles spéciales applicables à certains agents publics ne s'appliquent pas "
+                    "aux agents auteurs d'œuvres dont la divulgation n'est soumise à aucun contrôle "
+                    "préalable de l'autorité hiérarchique."
                 )
             else:
                 afficher_resultat(
                     "🟡", "AGENT PUBLIC  —  RÉGIME SPÉCIFIQUE",
-                    "Pour les œuvres créées dans l'exercice des fonctions, "
-                    "la personne publique dispose d'un droit d'exploitation dans la mesure "
-                    "strictement nécessaire à sa mission de service public (art. L131-3-1 CPI). "
-                    "Hors de ce cadre, les droits restent à l'agent."
+                    "Pour les œuvres créées dans l'exercice des fonctions ou d'après les "
+                    "instructions reçues, la personne publique bénéficie d'un droit "
+                    "d'exploitation de plein droit uniquement dans la mesure strictement "
+                    "nécessaire à l'accomplissement de sa mission de service public. Pour "
+                    "l'exploitation commerciale, elle ne dispose en principe que d'un droit "
+                    "de préférence. Ce régime s'applique à l'État et, par renvoi, à diverses "
+                    "autres personnes publiques ; il ne s'applique pas aux agents dont la "
+                    "divulgation n'est soumise à aucun contrôle hiérarchique préalable. Hors "
+                    "de ces hypothèses, les droits restent à l'agent."
                 )
 
         elif statut == 5:  # Freelance
@@ -1051,10 +1095,12 @@ try:
     separateur("POINTS DE VIGILANCE")
 
     vigilance = [
-        "⚠️  Les droits moraux (paternité, intégrité, divulgation, droit de repentir) "
-        "sont inaliénables en droit français (art. L121-1 CPI) : même en cas de cession "
-        "complète des droits patrimoniaux, tu conserves le droit d'être cité comme auteur "
-        "et de t'opposer à une déformation de ton œuvre.",
+        "⚠️  En droit commun, les droits moraux (paternité, respect de l'œuvre, "
+        "divulgation, repentir/retrait) sont attachés à la personne de l'auteur et sont "
+        "en principe perpétuels, inaliénables et imprescriptibles (art. L121-1 CPI). "
+        "Mais attention : pour les logiciels (art. L121-7 CPI) et pour les agents publics "
+        "dans les cas où le régime spécial s'applique (art. L121-7-1 CPI), le droit moral "
+        "est légalement aménagé, notamment pour les modifications et le retrait.",
 
         "⚠️  Pour toute cession d'œuvre hors logiciel créé dans les fonctions, "
         "la loi exige une mention distincte pour chaque droit cédé, avec la durée, "
