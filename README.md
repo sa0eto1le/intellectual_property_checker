@@ -269,4 +269,3 @@ Droit du numérique · Propriété intellectuelle
 Ce projet est distribué sous licence **MIT**.  
 Voir le fichier [LICENSE](LICENSE) pour le détail.
  
-Ce projet a été inspiré et assisté avec l'aide d'outils d'intelligence artificielle pour la rédaction du code.
