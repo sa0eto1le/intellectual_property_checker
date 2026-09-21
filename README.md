@@ -10,7 +10,7 @@
  
 ##  À quoi ça sert ?
  
-Tu as créé quelque chose dans le cadre de ton travail - un logiciel, un design, un texte, une invention - et tu te demandes à qui appartiennent les droits dessus ? Ce formulaire t'aide à y voir plus clair.
+Tu as créé quelque chose dans le cadre de ton travail : un logiciel, un design, un texte, une invention. Tu te demandes à qui appartiennent les droits dessus ? Ce formulaire t'aide à y voir plus clair.
  
 En répondant à une série de questions simples, tu obtiens :
 - une **analyse de ta situation** selon ton statut (salarié, alternant, stagiaire, agent public, freelance)
@@ -21,7 +21,7 @@ En répondant à une série de questions simples, tu obtiens :
  
 Le questionnaire couvre le **droit d'auteur** (œuvres, logiciels), le **droit des brevets** (inventions) et les **bases de données**.
  
->  Outil d'orientation uniquement - pas un avis juridique. Pour une situation complexe ou un litige, consulte un professionnel du droit.
+>  Outil d'orientation uniquement, pas un avis juridique. Pour une situation complexe ou un litige, consulte un professionnel du droit.
  
 ---
  
