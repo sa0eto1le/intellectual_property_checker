@@ -115,7 +115,7 @@ sudo apt install python3
 Si tu as Git installé :
  
 ```bash
-git clone https://github.com/sa0/ip_checker.git
+git clone https://github.com/sa0/intellectual_property_checker.git
 cd ip_checker
 ```
  
