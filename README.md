@@ -115,8 +115,8 @@ sudo apt install python3
 Si tu as Git installé :
  
 ```bash
-git clone https://github.com/sa0/intellectual_property_checker.git
-cd ip_checker
+git clone https://github.com/sa0eto1le/intellectual_property_checker.git
+cd intellectual_property_checker
 ```
  
 ---
@@ -128,7 +128,7 @@ cd ip_checker
 1. Ouvre un terminal
 2. Navigue jusqu'au dossier du projet :
 ```bash
-cd chemin/vers/ip_checker
+cd chemin/vers/intellectual_property_checker
 ```
 3. Lance le script :
 ```bash
@@ -140,7 +140,7 @@ python3 ip_checker.py
 1. Ouvre PowerShell ou l'invite de commandes
 2. Navigue jusqu'au dossier :
 ```powershell
-cd C:\chemin\vers\ip_checker
+cd C:\chemin\vers\intellectual_property_checker
 ```
 3. Lance le script :
 ```powershell
@@ -154,7 +154,7 @@ python ip_checker.py
 ##  Structure du projet
  
 ```
-ip_checker/
+intellectual_property_checker/
 ├── ip_checker.py     ← le script principal - c'est lui qu'on lance
 ├── README.md         ← ce fichier
 └── LICENSE           ← licence MIT
